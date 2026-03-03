@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #00813a86;
+    color: #000000;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #222;
+    color: #bebbbb;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #ada9a9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+}
+
+.caixa {
+    background: #d0e6b8a2;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.caixa h3 {
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.caixa p {
+    color: #000000;
+    line-height: 1.5;
+}
+
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.produto {
+    background: #d0e6b8a2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+
+.produto h3 {
+    margin: 12px 0;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.preco {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0;
+    color: #ff0015;
+}
+
+ button,
+.botao-comprar {
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    align-items: end;
+}
+
+button:hover,
+.botao-comprar:hover {
+    background: #e63946;
+}
+
+.contato-form {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #d0e6b8a2;
+    padding: 25px;
+    border-radius: 33px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.contato-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.contato-form button {
+    background: #00dd42;
+    color: #000000;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.contato-form button:hover {
+    background: #c53030;
+}
+
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    margin-top: auto;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
